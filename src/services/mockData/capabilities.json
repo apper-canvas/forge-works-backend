@@ -1,0 +1,80 @@
+[
+  {
+    "Id": 1,
+    "title": "CNC Machining",
+    "description": "State-of-the-art CNC machining capabilities with 3, 4, and 5-axis machines for complex geometries and tight tolerances.",
+    "equipment": [
+      "Haas VF-4SS 5-Axis Mill",
+      "Mazak Quick Turn 350M CNC Lathe",
+      "DMG Mori NHX 5500 Horizontal Mill",
+      "Okuma LB35II CNC Lathe"
+    ],
+    "capacity": "Up to 50\" x 40\" x 30\"",
+    "icon": "Settings"
+  },
+  {
+    "Id": 2,
+    "title": "Precision Grinding",
+    "description": "Advanced grinding capabilities for achieving superior surface finishes and dimensional accuracy on critical components.",
+    "equipment": [
+      "Studer S33 CNC Cylindrical Grinder",
+      "Harig 6\" x 12\" Surface Grinder",
+      "Brown & Sharpe Microval 244 CMM",
+      "Okamoto ACC-124DX Surface Grinder"
+    ],
+    "capacity": "±0.0001\" tolerance",
+    "icon": "Disc"
+  },
+  {
+    "Id": 3,
+    "title": "Welding & Fabrication",
+    "description": "Comprehensive welding and fabrication services including TIG, MIG, and specialized welding processes for various materials.",
+    "equipment": [
+      "Lincoln Electric Power Wave 455M",
+      "Miller Dynasty 350 TIG Welder",
+      "ESAB Rebel EMP 235ic Multi-Process",
+      "Amada FOM2-4020NT Laser Cutting"
+    ],
+    "capacity": "Up to 2\" thickness",
+    "icon": "Flame"
+  },
+  {
+    "Id": 4,
+    "title": "Quality Control",
+    "description": "Advanced metrology and quality control systems ensuring every part meets or exceeds specifications.",
+    "equipment": [
+      "Zeiss Contura G2 CMM",
+      "Keyence IM Series Measurement System",
+      "Mitutoyo QM-Height Gage",
+      "Starrett AVR400 Vision System"
+    ],
+    "capacity": "±0.00005\" accuracy",
+    "icon": "Search"
+  },
+  {
+    "Id": 5,
+    "title": "Heat Treatment",
+    "description": "In-house heat treatment capabilities for optimizing material properties and achieving desired hardness levels.",
+    "equipment": [
+      "Lindberg Blue M Furnace",
+      "Ipsen Vacuum Furnace",
+      "Surface Combustion Atmosphere Furnace",
+      "Rockwell Hardness Tester"
+    ],
+    "capacity": "Up to 2000°F",
+    "icon": "Zap"
+  },
+  {
+    "Id": 6,
+    "title": "Assembly & Testing",
+    "description": "Complete assembly services with functional testing to ensure products meet performance requirements.",
+    "equipment": [
+      "Clean Room Assembly Area",
+      "Pneumatic Test Stations",
+      "Automated Torque Systems",
+      "Leak Testing Equipment"
+    ],
+    "capacity": "1000+ units/month",
+    "icon": "Package"
+  }
+]
