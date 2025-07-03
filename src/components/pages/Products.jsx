@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import ProductCard from '@/components/molecules/ProductCard'
+import DownloadCenter from '@/components/organisms/DownloadCenter'
 import FilterSidebar from '@/components/molecules/FilterSidebar'
 import SearchBar from '@/components/molecules/SearchBar'
 import Loading from '@/components/ui/Loading'
@@ -141,6 +142,16 @@ const Products = () => {
             Explore our comprehensive range of precision-engineered components and assemblies 
             designed to meet the highest industry standards
           </p>
+</motion.div>
+        
+        {/* Download Center */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="mb-12"
+        >
+          <DownloadCenter />
         </motion.div>
         
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">

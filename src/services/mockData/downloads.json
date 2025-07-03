@@ -1,0 +1,152 @@
+[
+  {
+    "Id": 1,
+    "title": "CNC Precision Parts Catalog",
+    "description": "Complete catalog of precision machined components including tolerances, materials, and specifications.",
+    "category": "precision-parts",
+    "type": "PDF",
+    "fileSize": 8457280,
+    "url": "/downloads/precision-parts-catalog.pdf",
+    "lastUpdated": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "title": "Precision Bearings Technical Specs",
+    "description": "Detailed technical specifications for all precision bearing products including load ratings and installation guides.",
+    "category": "precision-parts",
+    "type": "PDF",
+    "fileSize": 5242880,
+    "url": "/downloads/precision-bearings-specs.pdf",
+    "lastUpdated": "2024-01-10T14:20:00Z"
+  },
+  {
+    "Id": 3,
+    "title": "Micro-Machined Components Guide",
+    "description": "Comprehensive guide to micro-machined components with dimensional drawings and material properties.",
+    "category": "precision-parts",
+    "type": "PDF",
+    "fileSize": 12582912,
+    "url": "/downloads/micro-machined-guide.pdf",
+    "lastUpdated": "2024-01-08T09:15:00Z"
+  },
+  {
+    "Id": 4,
+    "title": "Industrial Valves Product Line",
+    "description": "Complete product line overview of industrial valves including pressure ratings and flow characteristics.",
+    "category": "industrial-components",
+    "type": "PDF",
+    "fileSize": 15728640,
+    "url": "/downloads/industrial-valves-catalog.pdf",
+    "lastUpdated": "2024-01-12T11:45:00Z"
+  },
+  {
+    "Id": 5,
+    "title": "Heavy-Duty Gears Specifications",
+    "description": "Technical specifications for heavy-duty gear systems including torque ratings and material composition.",
+    "category": "industrial-components",
+    "type": "PDF",
+    "fileSize": 9437184,
+    "url": "/downloads/heavy-duty-gears-specs.pdf",
+    "lastUpdated": "2024-01-14T16:30:00Z"
+  },
+  {
+    "Id": 6,
+    "title": "Hydraulic Systems Components",
+    "description": "Comprehensive catalog of hydraulic system components with pressure specifications and compatibility charts.",
+    "category": "industrial-components",
+    "type": "PDF",
+    "fileSize": 18874368,
+    "url": "/downloads/hydraulic-systems-catalog.pdf",
+    "lastUpdated": "2024-01-11T13:20:00Z"
+  },
+  {
+    "Id": 7,
+    "title": "Custom Fabrication Capabilities",
+    "description": "Overview of custom fabrication services including materials, processes, and quality standards.",
+    "category": "custom-fabrication",
+    "type": "PDF",
+    "fileSize": 6291456,
+    "url": "/downloads/custom-fabrication-overview.pdf",
+    "lastUpdated": "2024-01-13T08:30:00Z"
+  },
+  {
+    "Id": 8,
+    "title": "Welding and Joining Processes",
+    "description": "Detailed guide to welding and joining processes used in custom fabrication projects.",
+    "category": "custom-fabrication",
+    "type": "PDF",
+    "fileSize": 11534336,
+    "url": "/downloads/welding-processes-guide.pdf",
+    "lastUpdated": "2024-01-09T15:45:00Z"
+  },
+  {
+    "Id": 9,
+    "title": "Material Selection Guide",
+    "description": "Comprehensive guide to material selection for custom fabrication projects including properties and applications.",
+    "category": "custom-fabrication",
+    "type": "PDF",
+    "fileSize": 13631488,
+    "url": "/downloads/material-selection-guide.pdf",
+    "lastUpdated": "2024-01-07T12:10:00Z"
+  },
+  {
+    "Id": 10,
+    "title": "Mechanical Assemblies Catalog",
+    "description": "Complete catalog of mechanical assemblies including sub-assemblies and integration specifications.",
+    "category": "assemblies",
+    "type": "PDF",
+    "fileSize": 21495808,
+    "url": "/downloads/mechanical-assemblies-catalog.pdf",
+    "lastUpdated": "2024-01-16T10:00:00Z"
+  },
+  {
+    "Id": 11,
+    "title": "Electrical Integration Guide",
+    "description": "Guide to electrical integration in mechanical assemblies including wiring diagrams and component specifications.",
+    "category": "assemblies",
+    "type": "PDF",
+    "fileSize": 8388608,
+    "url": "/downloads/electrical-integration-guide.pdf",
+    "lastUpdated": "2024-01-06T14:30:00Z"
+  },
+  {
+    "Id": 12,
+    "title": "Assembly Testing Procedures",
+    "description": "Standard testing procedures for mechanical assemblies including quality control and validation methods.",
+    "category": "assemblies",
+    "type": "PDF",
+    "fileSize": 7340032,
+    "url": "/downloads/assembly-testing-procedures.pdf",
+    "lastUpdated": "2024-01-05T09:20:00Z"
+  },
+  {
+    "Id": 13,
+    "title": "Precision Tooling Solutions",
+    "description": "Comprehensive catalog of precision tooling solutions including cutting tools and measurement equipment.",
+    "category": "tooling",
+    "type": "PDF",
+    "fileSize": 16777216,
+    "url": "/downloads/precision-tooling-catalog.pdf",
+    "lastUpdated": "2024-01-04T11:15:00Z"
+  },
+  {
+    "Id": 14,
+    "title": "Tool Maintenance Guidelines",
+    "description": "Best practices for tool maintenance including cleaning, calibration, and storage procedures.",
+    "category": "tooling",
+    "type": "PDF",
+    "fileSize": 4194304,
+    "url": "/downloads/tool-maintenance-guide.pdf",
+    "lastUpdated": "2024-01-03T16:45:00Z"
+  },
+  {
+    "Id": 15,
+    "title": "Measurement Equipment Specs",
+    "description": "Technical specifications for precision measurement equipment including accuracy ratings and calibration requirements.",
+    "category": "tooling",
+    "type": "PDF",
+    "fileSize": 10485760,
+    "url": "/downloads/measurement-equipment-specs.pdf",
+    "lastUpdated": "2024-01-02T13:30:00Z"
+  }
+]
