@@ -135,9 +135,9 @@ const Products = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-8"
+className="text-center mb-8"
         >
-<h1 className="heading-display mb-4">Our Products</h1>
+          <h1 className="heading-display mb-4">Our Products</h1>
           <p className="text-body max-w-2xl mx-auto">
             Explore our comprehensive range of precision-engineered components and assemblies 
             designed to meet the highest industry standards
@@ -202,14 +202,15 @@ const Products = () => {
                     key={product.Id}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
+transition={{ delay: index * 0.1 }}
                   >
-<ProductCard product={product} />
+                    <ProductCard product={product} />
                   </motion.div>
                 ))}
               </div>
             )}
           </div>
+        </div>
         
         {/* Download Center */}
         <motion.div
@@ -220,7 +221,7 @@ const Products = () => {
         >
           <DownloadCenter />
         </motion.div>
-</div>
+      </div>
     </div>
   )
 }
