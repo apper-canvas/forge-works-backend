@@ -7,15 +7,15 @@ import Badge from '@/components/atoms/Badge'
 import Loading from '@/components/ui/Loading'
 import Error from '@/components/ui/Error'
 import ApperIcon from '@/components/ApperIcon'
+import QuoteRequestModal from '@/components/molecules/QuoteRequestModal'
 import { productService } from '@/services/api/productService'
-
 const ProductDetail = () => {
   const { id } = useParams()
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
-  
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   useEffect(() => {
     loadProduct()
   }, [id])
@@ -34,8 +34,8 @@ const ProductDetail = () => {
     }
   }
   
-  const handleInquiry = () => {
-    toast.success('Inquiry sent! We will contact you soon.')
+const handleRequestQuote = () => {
+    setIsQuoteModalOpen(true)
   }
   
   if (loading) {
@@ -182,9 +182,9 @@ const ProductDetail = () => {
             )}
             
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+<div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Button
-                onClick={handleInquiry}
+                onClick={handleRequestQuote}
                 className="flex-1"
                 icon="MessageCircle"
               >
@@ -215,8 +215,13 @@ const ProductDetail = () => {
               </div>
             </div>
           </motion.div>
-        </div>
+</div>
       </div>
+      
+      <QuoteRequestModal
+        isOpen={isQuoteModalOpen}
+        onClose={() => setIsQuoteModalOpen(false)}
+      />
     </div>
   )
 }
