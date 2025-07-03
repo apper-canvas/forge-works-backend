@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import ApperIcon from '@/components/ApperIcon'
+import QuoteRequestModal from '@/components/molecules/QuoteRequestModal'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   const location = useLocation()
   
   useEffect(() => {
@@ -26,8 +28,16 @@ const Header = () => {
     { name: 'Contact', href: '/contact' }
   ]
   
-  const toggleMobileMenu = () => {
+const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+  
+  const openQuoteModal = () => {
+    setIsQuoteModalOpen(true)
+  }
+  
+  const closeQuoteModal = () => {
+    setIsQuoteModalOpen(false)
   }
   
   return (
@@ -77,14 +87,14 @@ const Header = () => {
             ))}
           </div>
           
-          {/* CTA Button */}
+{/* CTA Button */}
           <div className="hidden lg:block">
-            <Link
-              to="/contact"
+            <button
+              onClick={openQuoteModal}
               className="btn-primary text-sm"
             >
-              Get Quote
-            </Link>
+              Request Quote
+            </button>
           </div>
           
           {/* Mobile Menu Button */}
@@ -121,17 +131,21 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                to="/contact"
-                onClick={() => setIsMobileMenuOpen(false)}
+<button
+                onClick={() => {
+                  setIsMobileMenuOpen(false)
+                  openQuoteModal()
+                }}
                 className="btn-primary text-sm w-fit"
               >
-                Get Quote
-              </Link>
+                Request Quote
+              </button>
             </div>
           </div>
-        </motion.div>
+</motion.div>
       )}
+      
+      <QuoteRequestModal isOpen={isQuoteModalOpen} onClose={closeQuoteModal} />
     </motion.header>
   )
 }
