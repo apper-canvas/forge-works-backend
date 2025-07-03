@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useSelector } from 'react-redux'
 import ApperIcon from '@/components/ApperIcon'
 import QuoteRequestModal from '@/components/molecules/QuoteRequestModal'
-
+import { AuthContext } from '../../App'
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   const location = useLocation()
+  const { logout } = useContext(AuthContext)
+  const { user, isAuthenticated } = useSelector((state) => state.user)
   
   useEffect(() => {
     const handleScroll = () => {
@@ -87,16 +90,30 @@ const toggleMobileMenu = () => {
             ))}
           </div>
           
-{/* CTA Button */}
-          <div className="hidden lg:block">
+{/* CTA Button and User Menu */}
+          <div className="hidden lg:flex items-center space-x-4">
             <button
               onClick={openQuoteModal}
               className="btn-primary text-sm"
             >
               Request Quote
             </button>
+            
+            {isAuthenticated && (
+              <div className="flex items-center space-x-3">
+                <span className="text-sm text-gray-600">
+                  Welcome, {user?.firstName || 'User'}
+                </span>
+                <button
+                  onClick={logout}
+                  className="text-sm text-red-600 hover:text-red-700 font-medium flex items-center"
+                >
+                  <ApperIcon name="LogOut" size={16} className="mr-1" />
+                  Logout
+                </button>
+              </div>
+            )}
           </div>
-          
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMobileMenu}
@@ -131,15 +148,35 @@ const toggleMobileMenu = () => {
                   {item.name}
                 </Link>
               ))}
-<button
-                onClick={() => {
-                  setIsMobileMenuOpen(false)
-                  openQuoteModal()
-                }}
-                className="btn-primary text-sm w-fit"
-              >
-                Request Quote
-              </button>
+<div className="flex flex-col space-y-4">
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false)
+                    openQuoteModal()
+                  }}
+                  className="btn-primary text-sm w-fit"
+                >
+                  Request Quote
+                </button>
+                
+                {isAuthenticated && (
+                  <div className="pt-4 border-t border-gray-200">
+                    <p className="text-sm text-gray-600 mb-2">
+                      Welcome, {user?.firstName || 'User'}
+                    </p>
+                    <button
+                      onClick={() => {
+                        setIsMobileMenuOpen(false)
+                        logout()
+                      }}
+                      className="text-sm text-red-600 hover:text-red-700 font-medium flex items-center"
+                    >
+                      <ApperIcon name="LogOut" size={16} className="mr-1" />
+                      Logout
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 </motion.div>
