@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import ProductCard from '@/components/molecules/ProductCard'
-import DownloadCenter from '@/components/organisms/DownloadCenter'
-import FilterSidebar from '@/components/molecules/FilterSidebar'
-import SearchBar from '@/components/molecules/SearchBar'
-import Loading from '@/components/ui/Loading'
-import Error from '@/components/ui/Error'
-import Empty from '@/components/ui/Empty'
-import ApperIcon from '@/components/ApperIcon'
-import { productService } from '@/services/api/productService'
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
+import DownloadCenter from "@/components/organisms/DownloadCenter";
+import SearchBar from "@/components/molecules/SearchBar";
+import FilterSidebar from "@/components/molecules/FilterSidebar";
+import ProductCard from "@/components/molecules/ProductCard";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
+import Loading from "@/components/ui/Loading";
+import { productService } from "@/services/api/productService";
 
 const Products = () => {
   const [products, setProducts] = useState([])
@@ -137,21 +137,11 @@ const Products = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-8"
         >
-          <h1 className="heading-display mb-4">Our Products</h1>
+<h1 className="heading-display mb-4">Our Products</h1>
           <p className="text-body max-w-2xl mx-auto">
             Explore our comprehensive range of precision-engineered components and assemblies 
             designed to meet the highest industry standards
           </p>
-</motion.div>
-        
-        {/* Download Center */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="mb-12"
-        >
-          <DownloadCenter />
         </motion.div>
         
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -214,14 +204,23 @@ const Products = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <ProductCard product={product} />
+<ProductCard product={product} />
                   </motion.div>
                 ))}
               </div>
             )}
           </div>
-        </div>
-      </div>
+        
+        {/* Download Center */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="mt-12"
+        >
+          <DownloadCenter />
+        </motion.div>
+</div>
     </div>
   )
 }
