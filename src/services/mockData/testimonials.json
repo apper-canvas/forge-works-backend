@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "company": "Apex Manufacturing",
+    "logo": "https://via.placeholder.com/120x60/1e3a5f/ffffff?text=APEX",
+    "testimonial": "ForgeWorks consistently delivers precision components that exceed our quality standards. Their attention to detail and commitment to deadlines has made them our go-to partner for critical manufacturing projects.",
+    "clientName": "Sarah Johnson",
+    "clientTitle": "Production Manager",
+    "rating": 5,
+    "projectType": "Precision Machining"
+  },
+  {
+    "Id": 2,
+    "company": "TechDyne Solutions",
+    "logo": "https://via.placeholder.com/120x60/4a6fa5/ffffff?text=TechDyne",
+    "testimonial": "The custom bracket assemblies provided by ForgeWorks have been instrumental in our product development. Their engineering expertise and manufacturing capabilities are truly exceptional.",
+    "clientName": "Michael Chen",
+    "clientTitle": "Senior Engineer",
+    "rating": 5,
+    "projectType": "Custom Fabrication"
+  },
+  {
+    "Id": 3,
+    "company": "Industrial Dynamics",
+    "logo": "https://via.placeholder.com/120x60/e67e22/ffffff?text=Industrial",
+    "testimonial": "Working with ForgeWorks has streamlined our supply chain significantly. Their hydraulic components are built to last and their customer service is unmatched in the industry.",
+    "clientName": "Robert Martinez",
+    "clientTitle": "Operations Director",
+    "rating": 5,
+    "projectType": "Industrial Components"
+  },
+  {
+    "Id": 4,
+    "company": "MedTech Innovations",
+    "logo": "https://via.placeholder.com/120x60/27ae60/ffffff?text=MedTech",
+    "testimonial": "ForgeWorks understands the critical nature of medical device manufacturing. Their FDA-compliant processes and biocompatible materials have been essential to our product success.",
+    "clientName": "Dr. Lisa Thompson",
+    "clientTitle": "Chief Technology Officer",
+    "rating": 5,
+    "projectType": "Medical Devices"
+  },
+  {
+    "Id": 5,
+    "company": "Performance Auto Group",
+    "logo": "https://via.placeholder.com/120x60/f39c12/ffffff?text=Performance",
+    "testimonial": "The automotive manifolds from ForgeWorks have enhanced our engine performance dramatically. Their precision machining and material selection are top-notch.",
+    "clientName": "James Wilson",
+    "clientTitle": "Lead Engineer",
+    "rating": 5,
+    "projectType": "Automotive Parts"
+  },
+  {
+    "Id": 6,
+    "company": "Precision Tools Corp",
+    "logo": "https://via.placeholder.com/120x60/3498db/ffffff?text=Precision",
+    "testimonial": "ForgeWorks' tooling fixtures have improved our production efficiency by 40%. Their understanding of manufacturing processes and precision requirements is outstanding.",
+    "clientName": "Amanda Davis",
+    "clientTitle": "Manufacturing Supervisor",
+    "rating": 5,
+    "projectType": "Tooling & Fixtures"
+  }
+]
