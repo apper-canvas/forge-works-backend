@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
+theme: {
     extend: {
       colors: {
         primary: '#1e3a5f',
@@ -13,7 +13,18 @@ export default {
         surface: '#f8f9fa',
         navy: '#1e3a5f',
         steel: '#4a6fa5',
-        orange: '#e67e22',
+        orange: {
+          50: '#fff7ed',
+          100: '#ffedd5',
+          200: '#fed7aa',
+          300: '#fdba74',
+          400: '#fb923c',
+          500: '#e67e22',
+          600: '#ea580c',
+          700: '#c2410c',
+          800: '#9a3412',
+          900: '#7c2d12',
+        },
         success: '#27ae60',
         warning: '#f39c12',
         error: '#e74c3c',
