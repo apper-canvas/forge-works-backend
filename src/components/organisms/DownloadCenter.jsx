@@ -69,19 +69,18 @@ const DownloadCenter = () => {
     setFilteredDownloads(filtered)
   }
 
-  const handleDownload = async (download) => {
+const handleDownload = async (download) => {
     try {
       setDownloadingIds(prev => new Set([...prev, download.Id]))
       
-      // Simulate download delay
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      // Attempt to download the file
+      await downloadService.downloadFile(download)
       
-      // In a real app, you would trigger the actual download here
-      // For now, we'll just show a success message
       toast.success(`Downloaded: ${download.title}`)
       
     } catch (err) {
-      toast.error('Download failed. Please try again.')
+      console.error('Download failed:', err)
+      toast.error(err.message || 'Download failed. Please try again.')
     } finally {
       setDownloadingIds(prev => {
         const newSet = new Set(prev)
