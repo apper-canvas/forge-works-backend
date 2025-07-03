@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "title": "ForgeWorks Expands Manufacturing Capabilities with New CNC Equipment",
+    "excerpt": "We're excited to announce the addition of state-of-the-art CNC machining centers to our production floor, enabling us to deliver even more precise components with faster turnaround times.",
+    "category": "Company News",
+    "author": "Manufacturing Team",
+    "publishedAt": "2024-01-15T10:00:00Z",
+    "featuredImage": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=400&fit=crop",
+    "content": "ForgeWorks continues to invest in cutting-edge technology to serve our customers better. Our new CNC equipment features advanced automation capabilities and precision tolerances that exceed industry standards."
+  },
+  {
+    "Id": 2,
+    "title": "New Partnership Brings Advanced Materials to Our Product Line",
+    "excerpt": "Through our partnership with leading material suppliers, we now offer an expanded range of specialty alloys and composites for demanding applications in aerospace and medical industries.",
+    "category": "Partnership",
+    "author": "Business Development",
+    "publishedAt": "2024-01-10T14:30:00Z",
+    "featuredImage": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
+    "content": "This strategic partnership enhances our ability to meet the most demanding material requirements while maintaining our commitment to quality and precision."
+  },
+  {
+    "Id": 3,
+    "title": "ForgeWorks Achieves ISO 9001:2015 Certification",
+    "excerpt": "We're proud to announce that ForgeWorks has successfully achieved ISO 9001:2015 certification, demonstrating our commitment to quality management and continuous improvement.",
+    "category": "Certification",
+    "author": "Quality Assurance",
+    "publishedAt": "2024-01-08T09:15:00Z",
+    "featuredImage": "https://images.unsplash.com/photo-1604719312566-878b8f8b3d4a?w=600&h=400&fit=crop",
+    "content": "This certification validates our quality management system and reinforces our dedication to delivering products that meet and exceed customer expectations."
+  },
+  {
+    "Id": 4,
+    "title": "Sustainable Manufacturing Initiative Reduces Environmental Impact",
+    "excerpt": "Our new sustainability program has successfully reduced waste by 35% and energy consumption by 20% through innovative process improvements and recycling initiatives.",
+    "category": "Sustainability",
+    "author": "Environmental Team",
+    "publishedAt": "2024-01-05T11:45:00Z",
+    "featuredImage": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop",
+    "content": "Environmental responsibility is a core value at ForgeWorks. Our comprehensive sustainability program demonstrates our commitment to protecting the environment while maintaining operational excellence."
+  },
+  {
+    "Id": 5,
+    "title": "Employee Spotlight: Innovation in Action",
+    "excerpt": "Meet our engineering team that developed a breakthrough process for creating ultra-lightweight yet strong components, revolutionizing efficiency in automotive applications.",
+    "category": "Employee News",
+    "author": "Human Resources",
+    "publishedAt": "2024-01-03T16:20:00Z",
+    "featuredImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+    "content": "Our talented team continues to push the boundaries of what's possible in precision manufacturing, developing innovative solutions that benefit our customers and the industry."
+  },
+  {
+    "Id": 6,
+    "title": "ForgeWorks Announces Plans for Facility Expansion",
+    "excerpt": "To meet growing demand, we're expanding our manufacturing facility by 50%, adding new production lines and creating 25 new jobs in the local community.",
+    "category": "Expansion",
+    "author": "Executive Team",
+    "publishedAt": "2024-01-01T08:00:00Z",
+    "featuredImage": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop",
+    "content": "This expansion reflects our strong growth trajectory and commitment to serving our customers with increased capacity and capabilities while contributing to local economic development."
+  }
+]
