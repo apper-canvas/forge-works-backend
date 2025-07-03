@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import NewsCard from '@/components/molecules/NewsCard'
 import Loading from '@/components/ui/Loading'
@@ -8,6 +9,7 @@ import ApperIcon from '@/components/ApperIcon'
 import { newsService } from '@/services/api/newsService'
 
 const NewsGrid = () => {
+  const navigate = useNavigate()
   const [news, setNews] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -27,9 +29,12 @@ const NewsGrid = () => {
       setError('Failed to load news. Please try again.')
     } finally {
       setLoading(false)
-    }
+}
   }
   
+  const handleViewAllNews = () => {
+    navigate('/news')
+  }
   if (loading) {
     return (
       <section className="section-padding bg-white">
@@ -115,9 +120,9 @@ const NewsGrid = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center"
+className="text-center"
         >
-          <button className="btn-primary">
+          <button className="btn-primary" onClick={handleViewAllNews}>
             <ApperIcon name="Newspaper" size={20} className="mr-2" />
             View All News
           </button>

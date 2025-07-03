@@ -7,6 +7,7 @@ import Products from '@/components/pages/Products'
 import ProductDetail from '@/components/pages/ProductDetail'
 import Capabilities from '@/components/pages/Capabilities'
 import Quality from '@/components/pages/Quality'
+import News from '@/components/pages/News'
 import About from '@/components/pages/About'
 import Contact from '@/components/pages/Contact'
 
@@ -18,8 +19,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="products" element={<Products />} />
           <Route path="products/:id" element={<ProductDetail />} />
-          <Route path="capabilities" element={<Capabilities />} />
+<Route path="capabilities" element={<Capabilities />} />
           <Route path="quality" element={<Quality />} />
+          <Route path="news" element={<News />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
         </Route>
